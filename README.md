@@ -15,6 +15,16 @@ ___
 > Uma lista dentro da outra
 
 ```html
-<p>paragrafo</p>
+<ul>
+  <li></li>
+   <li>
+      <ul> 
+         <li></li>
+         <li></li>
+      </ul>
+   </li>
+   <li></li>
+</div>
+
 ```
 
