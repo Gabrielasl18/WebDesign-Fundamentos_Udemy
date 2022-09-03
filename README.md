@@ -11,7 +11,7 @@ ___
 
 # SEÇÃO 3 - Curso Web Design Fundamentos/Udemy
 
-## Listas aninhadas e de definição
+## Listas aninhadas 
 > Uma lista dentro da outra
 
 ```html
@@ -25,6 +25,16 @@ ___
    </li>
    <li></li>
 </div>
-
 ```
 
+## Listas de definição
+> Um dicionário, por exemplo, onde temos um termo e uma definição.
+
+```html
+<dl>
+  <dt></dt>
+  <dd></dd>
+  <dt></dt>
+  <dd></dd>
+</dl>
+```
