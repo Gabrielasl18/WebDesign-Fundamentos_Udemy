@@ -5,9 +5,16 @@
 ___
 
 # WebDesign-Udemy
-HTML5 + CSS3,+ JS
+*HTML5 + CSS3,+ JS*
 
 ___
 
-# SEÇÃO 3 - Curso Web Design/Udemy
+# SEÇÃO 3 - Curso Web Design Fundamentos/Udemy
+
+## Listas aninhadas e de definição
+> Uma lista dentro da outra
+
+```html
+<p>paragrafo</p>
+```
 
