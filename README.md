@@ -28,12 +28,33 @@ ___
 ```
 
 ## Listas de definição
-> Um dicionário, por exemplo, onde temos um termo e uma definição.
+> Um dicionário, por exemplo, onde temos 1 termo 1 definição.
 
 ```html
 <dl>
   <dt></dt>
   <dd></dd>
+  <dt></dt>
+  <dd></dd>
+</dl>
+```
+> Um dicionário, por exemplo, onde temos um 1 e uma várias definições.
+
+```html
+<dl>
+  <dt></dt>
+  <dd></dd>
+  <dd></dd>
+  <dd></dd>
+</dl>
+```
+
+> Um dicionário, por exemplo, onde temos um vários e uma 1 definição.
+
+```html
+<dl>
+  <dt></dt>
+  <dt></dt>
   <dt></dt>
   <dd></dd>
 </dl>
