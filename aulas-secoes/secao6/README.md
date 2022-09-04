@@ -22,3 +22,29 @@
 <dt>method="post"</dt>
 <dd>Esconde os dados que estou enviando, envio junto com a requisição (muitos dados e problema com segurança).</dd>
 </dl>
+___
+
+## Semântica em formulários
+> Identificar o campo que o texto está se referindo.
+
+```html
+<label for="txtbusca">Faça uma busca</label>
+<input text="text" name="q" id="txtbusca">
+```
+___
+
+## Organizando entrada de dados
+> Agrupar. Podem ser vários grupos lógicos, dentro de um mesmo formulário.
+
+```html
+<form>
+    <fieldset>
+        <legend>Login</legend>
+    </fieldset>
+</form>
+```
+## Tipos de Entrada de dados
+
+<input type="text">
+<input type="password">
+<input type="checkbox">
