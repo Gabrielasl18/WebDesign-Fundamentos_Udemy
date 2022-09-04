@@ -9,9 +9,12 @@
     <></>
 </form>
 ```
+<dl>
 <dt>pagina.php</dt>
 <dd>Qualquer código de servidor que está esperando os dados</dd>
+</dl>
 
-
+<dl>
 <dt>method="get"</dt>
 <dd>Como vou enviar os dados para o servidor</dd>
+</dl>
