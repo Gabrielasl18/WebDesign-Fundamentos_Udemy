@@ -69,3 +69,12 @@ ___
 * textarea
 * select
 * option
+
+## Alguns Atributos
+
+* autofocus      *max* 
+* checked        *mim*
+* required       *cols*
+* maxlength      *rows*
+* multiple       *size*
+* placeholder    *step*
