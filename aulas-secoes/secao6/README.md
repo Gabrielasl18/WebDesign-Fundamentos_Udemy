@@ -72,10 +72,10 @@ ___
 
 ## Alguns Atributos
 
-* autofocus           *-> max* 
-* checked              *-> mim*
-* required            *-> cols*
-* maxlength            *-> rows*
-* multiple            *-> size*
-* placeholder           *-> step*
+* autofocus *-> max* 
+* checked   *-> mim*
+* required  *-> cols*
+* maxlength *-> rows*
+* multiple  *-> size*
+* placeholder *-> step*
         
