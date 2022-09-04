@@ -150,3 +150,10 @@ Valores possíveis:
   </tr>
 </table>
 ```
+> Propriedade Border-collapse
+* separate
+* collapse
+<dl>
+  <dt>separate</dt>
+  <dd>Espaço entre uma célula e outra</dd>
+</dl>
