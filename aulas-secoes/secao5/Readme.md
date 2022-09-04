@@ -15,6 +15,7 @@
    <li></li>
 </div>
 ```
+___
 
 ## Listas de definição
 > Um dicionário, por exemplo, onde temos 1 termo 1 definição.
@@ -47,6 +48,8 @@
   <dd></dd>
 </dl>
 ```
+___
+
 ## Overflow
 > Trata o conteúdo que excede determinado elemento.
 Valores possíveis:
@@ -54,6 +57,7 @@ Valores possíveis:
 * hdden
 * srool
 * auto
+___
 
 ## Tabelas
 > Todas as linhas devem possuir o mesmo número de colunas na tag table. (Do exemplo cada linha tem 2 colunasa).
