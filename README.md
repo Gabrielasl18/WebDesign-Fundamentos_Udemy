@@ -48,7 +48,6 @@ ___
   <dd></dd>
 </dl>
 ```
-
 > Um dicionário, por exemplo, onde temos um vários e uma 1 definição.
 
 ```html
@@ -59,3 +58,10 @@ ___
   <dd></dd>
 </dl>
 ```
+## Overflow
+> Trata o conteúdo que excede determinado elemento.
+Valores possíveis
+* vsible
+* hdden
+* srool
+* auto
