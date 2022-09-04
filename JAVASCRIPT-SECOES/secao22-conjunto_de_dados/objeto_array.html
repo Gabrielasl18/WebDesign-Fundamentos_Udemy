@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>objeto</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>objeto</h1>
+    <div id="output"></div>
+</body>
+<script>
+    var produtos = [
+        { "nome": "caneta,", "preco": 2 },
+        { "nome": "lapis", "preco": 1.2 },
+        { "nome": "borracha", "preco": 0.5 }
+    ];
+
+    var msg = "";
+
+    for (var i = 0; i < produtos.length; i++) {
+        console.log(produtos[i].preco);
+
+        msg += "</h2>Produto:" + produtos[i].nome + " caneta</h2>"
+        msg += "<p>preco: R$" + produtos[i].preco + "</p>"
+    }
+
+    document.querySelector('#output').innerHTML = msg;
+</script>
+
+</html>

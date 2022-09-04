@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>titulo 1</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>Lógica de Programação com JavaScript</h1>
+
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <!--existem outras maneiras de chamar a função, talvez até "melhores"-->
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+</body>
+
+<script>
+    function mostrarTabuada() {
+        var i = 1, number;
+        number = prompt('digite um numero');
+        limparTabuada();
+        number = parseFloat(number);
+
+        while (i <= 1000) {
+            mensagem += number + ' x ' + i + ' = ' + (number * i) + '<br>';
+            i++;
+        }
+        output.innerHTML = mensagem;
+    }
+    function limparTabuada() {
+        mensagem = '';
+        output.innerHTML = mensagem;
+    }
+    //mostrarTabuada();
+
+    var output = document.querySelector('#output');
+    var mensagem = '';
+
+</script>
+
+</html>

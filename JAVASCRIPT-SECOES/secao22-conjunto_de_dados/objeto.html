@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>objeto</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>objeto</h1>
+</body>
+<script>
+    var produto1 = new Object();
+    produto1.nome = 'caneta';
+    produto1.preco = 2.2;
+    produto1.estoque = 10;
+    produto.comprar = function () {
+        console.log('comprou caneta');
+        this.estoque--;
+        console.log(this);// this = referencia ao próprio objeto. 
+        console.log(this.estoque);
+    }// uma função dentro de um objeto, ou seja, um método.
+
+    var msg = '';
+    msg += 'nome: ' + produto1.nome + '<br>';
+    msg += 'preco: ' + produto1.preco + '<br>';
+    msg += 'estoque: ' + produto1.estoque + '<br>';
+
+    document.querySelector('#output').innerHTML = msg;
+
+</script>
+
+</html>

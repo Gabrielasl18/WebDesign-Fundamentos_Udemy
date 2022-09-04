@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>calculadora</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>Exercício Proposto 1</h1>
+
+    <button onclick="somaNumeros()">+</button>
+    <button onclick="subtraiNumeros()">-</button>
+    <button onclick="divideNumeros()">/</button>
+    <button onclick="multiplicaNumeros()">*</button>
+    <div id="output"></div>
+</body>
+
+<script>
+    var n1, n2, resultado;
+    n1 = prompt('digite um numero');
+    n1 = parseFloat(n1);
+    function escreve() {
+        var output = document.querySelector('#output');
+        output.innerHTML = resultado;
+    }
+    function somaNumeros() {
+        n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+        resultado = n1 + n2;
+        escreve();
+    }
+    function subtraiNumeros() {
+        n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+        resultado = n1 - n2;
+        escreve();
+    }
+    function divideNumeros() {
+        n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+        resultado = n1 / n2;
+        escreve();
+    }
+    function multiplicaNumeros() {
+        n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+        resultado = n1 * n2;
+        escreve();
+    }
+</script>
+
+</html>

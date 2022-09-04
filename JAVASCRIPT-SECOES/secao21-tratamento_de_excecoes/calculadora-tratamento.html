@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>calculadora</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>Exercício Proposto 1</h1>
+
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <div id="output"></div>
+</body>
+<script>
+    var n2 = prompt('digite um numero');
+    n2 = parseFloat(n2);
+
+    escreve(n2);
+
+    function iniciarCalculo(op) {
+        var n1 = document.querySelector('#output').textContent;
+        n1 = parseFloat(n1);
+        var n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+
+        try {
+            var msg = calcular(op, n1, n2);
+        } catch (e) {
+            console.log(e);
+            return;
+        } //tratou esse erro ao invés de avisar só no browser, já captura o erro e resolve.
+
+        escreve(msg);
+    }
+    function escreve(mensagem) {
+        var output = document.querySelector('#output');
+        output.innerHTML = mensagem;
+    }
+    function calcular(op, n1, n2) {
+
+        if (op !== '+' && op !== '-' && op !== '/' && op !== '/') {
+            throw new Error('digite um símbolo válido'); // Disparo erro no console em tempo real.
+            return 0; //Sai da função.
+        }
+        if (isNaN(n1) || isNaN(n2)) {
+            alert('chama passando somente numeros');
+            return 0; //Sai da função.
+        }
+        var result = null;
+        switch (op) {
+            case '+':
+                result = n1 + n2;
+                break;
+            case '-':
+                result = n1 - n2;
+                break;
+            case '/':
+                result = (n1 / n2);
+                break;
+            case '*':
+                result = (n1 * n2);
+        }
+        return result;
+    }
+
+</script>
+
+</html>

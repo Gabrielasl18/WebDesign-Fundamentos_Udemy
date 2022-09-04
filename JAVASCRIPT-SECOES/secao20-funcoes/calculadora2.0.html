@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>calculadora</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+</head>
+
+<body>
+    <h1>Exercício Proposto 1</h1>
+
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <div id="output"></div>
+</body>
+<script>
+    var n2 = prompt('digite um numero');
+    n2 = parseFloat(n2);
+
+    escreve(n2);
+
+    function iniciarCalculo(op) {
+        var n1 = document.querySelector('#output').textContent;
+        n1 = parseFloat(n1);
+        var n2 = prompt('digite o segundo numero');
+        n2 = parseFloat(n2);
+        var msg = calcular(op, n1, n2);
+        escreve(msg);
+    }
+    function escreve(mensagem) {
+        var output = document.querySelector('#output');
+        output.innerHTML = mensagem;
+    }
+    function calcular(op, n1, n2) {
+        var result = null;
+        switch (op) {
+            case '+':
+                result = n1 + n2;
+                break;
+            case '-':
+                result = n1 - n2;
+                break;
+            case '/':
+                result = (n1 / n2);
+                break;
+            case '*':
+                result = (n1 * n2);
+        }
+        return result;
+    }
+
+</script>
+
+</html>
