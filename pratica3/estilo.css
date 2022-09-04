@@ -1,0 +1,89 @@
+div {
+    padding: 100px;
+    padding-left: 155px;
+
+}
+
+.header-top {
+    position: absolute;
+}
+
+.header-nav {
+    background-color: rgba(7, 23, 41, 0.746);
+    position: relative;
+    height: 50px;
+    width: 1024px;
+}
+
+nav img {
+    margin-left: 15%;
+}
+
+ul {
+    float: right;
+    margin-right: 5%;
+}
+
+li {
+    color: #f5f5f525;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 14px;
+    margin-top: -8%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+h1,
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery-card {
+    float: left;
+    margin: 10px;
+    margin-top: 50px;
+    position: relative;
+    left: 100px;
+}
+
+.about {
+    background-image: url(./ProjetoFashion_inicio/imagens/bg_detalhe.png);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 400px;
+    height: 400px;
+    display: flex;
+
+}
+
+h2 {
+    text-align: center;
+    margin-left: 500px;
+}
+
+.maps {
+    position: relative;
+    right: 40%;
+}
+
+adress {
+    text-align: center;
+    color: rgb(13, 79, 104);
+    position: relative;
+    left: 35%;
+    text-transform: uppercase;
+}
+
+footer {
+    position: relative;
+    background-color: rgba(9, 41, 53, 0.746);
+    text-align: center;
+    margin-top: -15%;
+    height: 50px;
+    width: 1100px;
+    right: 1.6%;
+}

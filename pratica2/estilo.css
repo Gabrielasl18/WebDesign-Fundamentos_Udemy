@@ -1,0 +1,107 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.hero {
+    background-image: url(../exercicio2/ProjetoCSS_inicio/imagens/bg-4.jpg);
+    height: 500px;
+    display: flex;
+    background-position: right center;
+    background-size: cover;
+}
+
+.hero-content {
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+
+}
+
+.hero-content p {
+    background-color: rgba(3, 3, 2, 0.4);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.content-section {
+    background-color: rgb(253, 253, 253);
+    margin-top: 10px;
+    margin-left: -5%;
+    width: 100%;
+    overflow: auto;
+}
+.card img {
+    display: block;
+}
+
+.card {
+    float: left;
+    margin: 25px;
+}
+
+.card-2, .card-3 {
+    margin-right: 2%;
+}
+
+.card p {
+    background-color: rgba(92, 88, 88, 0.4);
+    color: white;
+    margin-top: 0px;
+    padding:15px;
+}
+
+ul {
+    position: absolute;
+    right: 3%;
+}
+
+li {
+    color: #fff;
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sep {
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+article {
+    margin: 10px;
+}
+
+
+.rodape {
+    height: 80px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.hero2  {
+    background-color: rgba(92, 88, 88, 0.4);
+}
+
