@@ -60,8 +60,8 @@ ___
 ```
 ## Overflow
 > Trata o conteúdo que excede determinado elemento.
-Valores possíveis
-* vsible
+Valores possíveis:
+* visible
 * hdden
 * srool
 * auto
