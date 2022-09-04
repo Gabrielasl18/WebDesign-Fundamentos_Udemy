@@ -67,7 +67,7 @@ Valores possíveis:
 * auto
 
 ## Tabelas
-> Todas as linhas devem possuir o mesmo número de colunas. (Do exemplo cada linha tem 2 colunasa)
+> Todas as linhas devem possuir o mesmo número de colunas na tag table. (Do exemplo cada linha tem 2 colunasa).
 
 ```html
 <table>
@@ -76,6 +76,36 @@ Valores possíveis:
   </tr>
   <tr>
     <td>2A</td> <td>2B</td>
+  </tr>  
+  <tr>
+    <td>3A</td> <td>3B</td>
+  </tr>
+</table>
+```
+> Para fazer com que a tag table possa ter uma linha com apenas umas coluna é necessário usar colspan, para mesclar duas colunas.
+
+```html
+<table>
+  <tr>
+    <td colspan="2">1A</td>
+  </tr>
+  <tr>
+    <td>2A</td> <td>2B</td>
+  </tr>  
+  <tr>
+    <td>3A</td> <td>3B</td>
+  </tr>
+</table>
+```
+> Para fazer 1 célula valer por 2 linhas, é necessário usar rowspan.
+
+<table>
+  <tr>
+    <td rowspan="2">1A</td>
+    <td>1B</td>
+  </tr>
+  <tr>
+    <td>2A</td> 
   </tr>  
   <tr>
     <td>3A</td> <td>3B</td>
