@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>titulo 1</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="#" method="POST" class=formLogin>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Email</label>
+            <input type="email" required maxlength="3" placeholder="digite um email válido" autofocus>
+            <!--Pro browser não muda o text para o email, mas por ex, em mobile pode mudar a forma de apresentação. Varia de acordo com o device, em como ele lê-->
+            <label>Numero de Filhos</label>
+            <input type="number" min="0" max="1000" step="0.5">
+            <!--Atributos podem ser postos-->
+
+            <label>Nascimento</label>
+            <input type="date" min="2022-09-04" max="2120-09-04">
+
+            <p>Sexo:</p>
+            <label>Masculino
+                <input type="radio" name="sexo" value="m">
+            </label>
+            <label>Feminino
+                <input type="radio" name="sexo" value="f">
+                <!--Servidor vai receber: Sexo=m ou Sexo=f -->
+            </label>
+            </br>
+
+            <input type="hidden" name="espira" value="2022-12-30">
+            <!--Informação escondida-->
+
+            <label>Estado</label>
+            <select name="estado">
+                <option value="0">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            </br>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label><input type="checkbox" name="html" value="html">HTML</label>
+            <label><input type="checkbox" name="css" value="CSS">CSS</label>
+            <label><input type="checkbox" name="js" value="JS">JavaScript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize:none" name="msg" cols="30" rows="10" maxlength="5"></textarea>
+
+            <textarea style="resize:none" name="contrato" cols="30" rows="10"
+                disabled>Aqui entra o texto que precisa ser aceito</textarea>
+            <!--Poderia usar um readonly também (para o usuário não alterar o)-->
+
+            <label><input type="checkbox" checked>Li e aceito</label>
+            <input type="range" min="0" max="10" step="2">
+            <input type="time">
+            <input type="color">
+
+            <select size="3" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+        </fieldset>
+
+        </br>
+        <input type="submit" value="mandar">
+        <input type="button" value="button">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>
