@@ -1,4 +1,4 @@
-## Iniciando JavaScript no HTML
+# Iniciando JavaScript no HTML
 
 ___
 
