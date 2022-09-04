@@ -45,14 +45,24 @@ ___
 ```
 ## Tipos de Entrada de dados
 
-  **input**        **input (HTML5)**
-* text              * email
-* password          * tel 
-* checkbox          * url
-* radio             * search
-* file              * number
-* hidden            * range
-* submit            * date
-* button            * time
-* reset             * color
+**input**        
+* text
+* password           
+* checkbox          
+* radio            
+* file              
+* hidden            
+* submit           
+* button           
+* reset            
 
+**input (HTML5)**
+* email
+* tel 
+* url
+* search
+* number
+* range
+* date
+* time
+* color
