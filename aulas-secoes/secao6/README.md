@@ -66,3 +66,6 @@ ___
 * date
 * time
 * color
+* textarea
+* select
+* option
