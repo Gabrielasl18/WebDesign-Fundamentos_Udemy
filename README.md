@@ -65,3 +65,20 @@ Valores possíveis:
 * hdden
 * srool
 * auto
+
+## Tabelas
+> Todas as linhas devem possuir o mesmo número de colunas. (Do exemplo cada linha tem 2 colunasa)
+
+```html
+<table>
+  <tr>
+    <td>1A</td> <td>3B</td>
+  </tr>
+  <tr>
+    <td>2A</td> <td>2B</td>
+  </tr>  
+  <tr>
+    <td>3A</td> <td>3B</td>
+  </tr>
+</table>
+```
