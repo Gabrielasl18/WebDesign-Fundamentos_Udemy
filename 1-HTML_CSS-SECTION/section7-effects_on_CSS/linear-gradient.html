@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Estrutura básica</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to right,red,blue);/* Gradiente funciona como um background-image, da pra alterar a posicao com 'to -posicao deseja-' */
+        }
+
+        #radius {
+            background: orange;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 50%;
+            box-shadow: 10px 0 10px 2px black, 10px 10px 0 red; /*Sombra com ou sem esfumaçamento, aumentar/diminuir.
+            Segunda sombra (vermelha)*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS efeitos</h1>
+    <div id="radius"></div>
+</body>
+
+</html>

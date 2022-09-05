@@ -1,0 +1,31 @@
+<!--Site para BAIXAR fonts (fonts squirrel)-->
+<!--Site para se basear ao criar @font-face (css tricks font-face)-->
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Estrutura básica</title>
+    <meta charset="utf-8">
+    <meta author="gabriela">
+    <meta description="base">
+    <meta keywords="base,html,inicio">
+    <style>
+        @font-face {
+            font-family: 'nadia';
+            src: url(fonts/nadia/nadia-serif.eot);
+            src: url(fonts/nadia/nadia-serif.woff) format('woff'), url(fonts/nadia/nadia-serif.ttf) format('ttf'), url(fonts/nadia/nadia-serif.svg) format('svg');
+            /*Adicionando fonte e auemntando a gama de suporte caso o navegador não tenha determinado arquivo e avisando antes pelo format(), para o browser não baixar sem ter o suporte*/
+        }
+
+        h1 {
+            font-family: nadia, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS efeitos</h1>
+    <div id="radius"></div>
+</body>
+
+</html>
