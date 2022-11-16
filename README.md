@@ -17,7 +17,7 @@ ___
     width: 100%;
     height:70px;
     
-       position: fixed;
+    position: fixed;
     z-index: 1000;
     overflow: hidden;
     bottom: 0;
