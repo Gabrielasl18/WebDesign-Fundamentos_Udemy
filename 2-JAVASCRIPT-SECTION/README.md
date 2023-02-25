@@ -32,3 +32,17 @@ ___
 
 ___
 
+## Sistema Léxico
+
+<dl>
+    <dt>Case-sensitive</dt>
+    <dd>Diferencia letras minusculas das maiusculas</dd>
+</dl>
+<dl>
+    <dt></dt>
+    <dd></dd>
+</dl>
+<dl>
+    <dt></dt>
+    <dd></dd>
+</dl>
