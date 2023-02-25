@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .btn-1 {
+            background-color: red;
+        }
+
+        .btn-2 {
+            background-color: aqua;
+        }
+
+        .btn-3 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Curso Javascript Completo 2018</h1>
+        <button id="btns" class="btn-1">button 1</button>
+        <button id="btns" class="btn-2">button 2</button>
+        <button id="btns" class="btn-3">button 3</button>
+    </div>
+    <script>
+        'use strict';
+
+        var $btns = document.getElementsByTagName('button');
+        var i = 0;
+
+        for (i = 0; i < $btns.length; i++) {
+            $btns[i].addEventListener('click', clicou);
+        }
+
+        function clicou() {
+            console.log(this.textContent);
+        }
+
+    </script>
+</body>
+
+</html>

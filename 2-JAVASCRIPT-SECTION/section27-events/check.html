@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        #btn {
+            margin-top: 20px;
+            margin-left: 160px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>ois</h1>
+
+        <h1>Checando um input</h1>
+        <form action="#">
+            <textarea cols="50" rows="10" readonly>Contrato de serviços prestados</textarea>
+            <label>
+                <input type="checkbox" id="chk"> Li e aceito os termos desse contrato
+            </label>
+            <input id="btn" type="submit" value="Continuar">
+        </form>
     </div>
+    <script>
+        (function () {
+            'use strict';
+
+            var $btn = document.getElementById('btn');
+            var $chk = document.getElementById('chk');
+
+            toggleBtn();
+            $chk.addEventListener('change', function () {
+                /*if(this.checked) {
+                    $btn.disabled = false;
+                } else {
+                    $btn.disabled = true;
+                }*/
+                toggleBtn();
+            });
+
+            function toggleBtn() {
+                $btn.disabled = !chk.checked;
+            }
+
+        }())
+    </script>
 </body>
+
 </html>

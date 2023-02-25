@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div id="container">
+        <input type="text" id="txtTask">
+        <button id="btn">Cadastrar tarefa</button>
+        <ul>
+            <li class="item-1">Estudar Javascript - DOM</li>
+            <li class="item-2">Estudar eventos em Javascript</li>
+            <li class="item-3">Jogar vídeo-game</li>
+        </ul>
+    </div>
+    <script>
+        'use strict';
+        (function () {
+            var $ul = document.querySelector('ul');
+            var $txtTask = document.querySelector('#txtTask');
+            var $btn = document.querySelector('#btn');
+
+            $btn.addEventListener('click', function() {
+                var task = '<li>' + $txtTask.value + '</li>';
+                $ul.innerHTML += task;
+                $txtTask.value = '';
+                $txtTask.focus();
+            });
+        }())
+    </script>
+</body>
+
+</html>
