@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Cuso Javascript Completo 2018
+        </h1>
+    </div>
+    <textarea id="msg" cols="50" rows="10" maxlength="100"></textarea>
+    <div id="restaContainer" style="display:none;">
+        Restam <span id="resta""></span> caracteres
+    </div>
+    <script>
+        (function () {
+            'use strict';
+            var $txtMsg = document.getElementById('msg');
+            var $restaContainer = document.getElementById('restaContainer');
+            var $resta = document.getElementById('resta');
+            var maxima = $txtMsg.maxLength;
+
+            function mostrarContainerResta() {
+                $restaContainer.style.display = 'block';
+            }
+            
+            mostrarContainerResta();
+            mostrarCaracteresRestantes(maxima);
+            
+            $restaContainer.style.display = 'block';
+
+            mostrarCaracteresRestantes(maxima);
+
+            $txtMsg.addEventListener('input', checkLength);
+
+            function checkLength(e) {
+                var numeroLetrasDigitadas = this.value.length;
+                var CaracteresRestantes = parseInt(maxima) - parseInt(numeroLetrasDigitadas);
+                mostrarCaracteresRestantes(CaracteresRestantes);
+            }
+
+            function mostrarCaracteresRestantes(n) {
+                $resta.textContent = n;
+            }
+
+        }())
+    </script>
+</body>
+
+</html>

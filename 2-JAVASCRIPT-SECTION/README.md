@@ -1,6 +1,6 @@
 # Iniciando JavaScript no HTML
 
-___
+___v
 
 ## Variáveis
 

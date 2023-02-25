@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="paragrafo">Olá, meu nome é gabriela</p>
+    <p class="paragrafo">Tenho 20 anos</p>
+    <p class="paragrafo">Tenho uma gata chamada Juju</p>
+    <p class="paragrafo">Faço ciência da computação</p>
+</body>
+<script>
+    var txt = document.querySelectorAll('.paragrafo');
+    var p = 0;
+    for (p = 0; p < txt.length; p++) {
+        console.log(txt[p]);
+        txt[p].textContent = "Este site foi hackeado por Gabriela";
+        console.log(txt[p]);
+    }
+</script>
+
+</html>

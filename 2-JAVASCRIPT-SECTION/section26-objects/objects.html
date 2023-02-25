@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            background-color: blueviolet;
+        }
+        p {
+            text-decoration:underline;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <h2>Nome:</h2>
+        <p id="paragrafo-1"></p>
+        <h2>Idade:</h2>
+        <p id="paragrafo-11"></p>
+        <h2>Endereço:</h2>
+        <p id="paragrafo-2"></p>
+    </h1>
+
+    <script>
+        var obj = {
+            pessoa: {   
+                first: 'Gabriela',
+                Last: 'Lacerda',
+                age: 18,
+            },
+            adress: 'Mesquita, RJ',
+        };
+        
+        document.querySelector('#paragrafo-1').textContent = obj.pessoa.first + " " + obj.pessoa.Last;
+        document.querySelector('#paragrafo-11').textContent = obj.pessoa.age;
+        document.querySelector('#paragrafo-2').textContent = obj.adress;
+        </script>
+</body>
+</html>

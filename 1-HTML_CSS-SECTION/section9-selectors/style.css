@@ -1,0 +1,26 @@
+
+p:not(span) {
+    background-color: red;
+}
+
+p ~ p {
+    background-color: blueviolet;
+}
+
+.sel2 > span {
+    background-color: orange;
+}
+
+article .sel3 {
+    border: 5px solid royalblue;
+}
+
+.sel3::before {
+    content: "texto before";
+    background-color: aqua;
+}
+
+.sel3::after {
+    content: "texto after";
+    background-color: aqua;
+}
